@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>AWContacts Demo</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="appworks.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </head>
+  <body>
+
+    <div id="intro-wrapper">
+      <div id="intro">
+        <div style="font-weight:bold; text-align:center; margin-bottom:8px;">AppWorks AWContacts Demo</div>
+        <p>Find a contact or multiple contacts</P>
+        <p>Create a new contact</P>
+      </div>
+    </div>
+
+    <div id="content-wrapper">
+      <div><input type="text" id="filter" class="text-input vertical-space" value=""/></div>
+      <div><button type="button" id="go0-button" class="go-button vertical-space" onclick="findContact();">Find Contacts</button></div>
+      <hr/>
+      <div><button type="button" id="go1-button" class="go-button vertical-space" onclick="pickContact();">Pick Contact</button></div>
+      <div><button type="button" id="go2-button" class="go-button vertical-space" onclick="toggleCreateElements();">Create Contact</button></div>
+    </div>
+
+    <div id="contacts-create-elements-wrapper">
+      <label for="contact-name" class="label">Name</label>
+      <input type="text" id="contact-name" class="text-input" />
+
+      <label for="contact-number" class="label">Number</label>
+      <input type="number" id="contact-number" class="text-input" />
+
+      <div><button type="button" id="go0-button" class="go-button vertical-space" onclick="createContact();">Create</button></div>      
+    </div>
+
+    <div id="result-wrapper">
+      <div id="result">
+        Any output will appear here.
+      </div>
+
+      <div id="version">Version 0.0.1</div>
+    </div>
+
+  </body>
+</html>
