@@ -117,13 +117,14 @@ var contacts = new Appworks.AWContacts(
 contacts.pickContact();
 ```
 
-#### pickContact
+#### create / save
 
 ```javascript
-pickContact()
+Contact()
+save()
 ```
 
-Open the native contact picker. Select a contact to retrieve the contact object.
+Create a new contact object, fill in a few properties such as name and number, then save it to the device contacts database.
 
 Examples
 ```javascript
